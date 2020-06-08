@@ -45,10 +45,11 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 /* フッター
 ------------------------------------------------------------*/
 #footer{
+	color: rgb(53, 53, 53);
 	clear: both;
 	padding: 50px 10px 50px 0;
 	text-align: center;
-	font-size: 12px;
+	font-size: 6px;
 }
 
 
@@ -145,16 +146,17 @@ section h2 span {
 .article{
 	clear: both;
 	overflow: hidden;
-	padding-bottom: 50px;
+	padding-bottom: 15px;
 }
 
 .article img{
 	float: left;
-	margin: 5px 20px 20px;
+	margin: 0 auto;
+	padding-right: 15px;
 }
 
 .article p{
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 
