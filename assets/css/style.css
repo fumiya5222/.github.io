@@ -232,7 +232,7 @@ section h2 span {
 	}
 	
 	#sns{
-		margin-top: 50px;
+		margin-top: 10px;
 	}
 	
 	#sns li{
@@ -321,7 +321,7 @@ section h2 span {
 	
 	#sidebar h1 img{
 		width: auto !important;
-		max-height: 25px;
+		max-height: 40px;
 	}
 	
   a#menu{
