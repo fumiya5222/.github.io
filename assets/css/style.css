@@ -97,6 +97,208 @@ section h2 span {
 	padding-bottom: 80px;
 }
 
+/* Link
+------------------------------------------------------------*/
+.primary_button__wrapper {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.primary_button__wrapper--center {
+  text-align: center;
+}
+
+.primary_button {
+  font-size: 2rem;
+  display: inline-block;
+  overflow: visible;
+  position: relative;
+}
+
+.primary_button:hover .primary_button__stripe1:after {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: -webkit-transform .4s ease 0s;
+  transition: -webkit-transform .4s ease 0s;
+  transition: transform .4s ease 0s;
+  transition: transform .4s ease 0s, -webkit-transform .4s ease 0s;
+}
+
+.primary_button:hover .primary_button__stripe2:after {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: -webkit-transform .4s ease 0s;
+  transition: -webkit-transform .4s ease 0s;
+  transition: transform .4s ease 0s;
+  transition: transform .4s ease 0s, -webkit-transform .4s ease 0s;
+}
+
+.primary_button__stripe1,
+.primary_button__stripe2 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.primary_button__stripe1:before,
+.primary_button__stripe1:after,
+.primary_button__stripe2:before,
+.primary_button__stripe2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.primary_button__stripe1 {
+  bottom: -4px;
+  left: -6px;
+}
+
+.primary_button__stripe1:after {
+  -webkit-transform: translate(-80px, 80px);
+      -ms-transform: translate(-80px, 80px);
+          transform: translate(-80px, 80px);
+  -webkit-transition: -webkit-transform .1s linear 0s;
+  transition: -webkit-transform .1s linear 0s;
+  transition: transform .1s linear 0s;
+  transition: transform .1s linear 0s, -webkit-transform .1s linear 0s;
+}
+
+.primary_button__stripe2 {
+  top: -4px;
+  right: -6px;
+}
+
+.primary_button__stripe2:after {
+  -webkit-transform: translate(80px, -80px);
+      -ms-transform: translate(80px, -80px);
+          transform: translate(80px, -80px);
+  -webkit-transition: -webkit-transform .1s linear 0s;
+  transition: -webkit-transform .1s linear 0s;
+  transition: transform .1s linear 0s;
+  transition: transform .1s linear 0s, -webkit-transform .1s linear 0s;
+}
+
+.primary_button--black {
+  color: #ffffff;
+}
+
+.primary_button--black .primary_button__stripe1:before {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #000000 6px, #000000 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #000000 6px, #000000 12px);
+}
+
+.primary_button--black .primary_button__stripe1:after {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #830324 6px, #830324 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #830324 6px, #830324 12px);
+}
+
+.primary_button--black .primary_button__stripe2:before {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #555555 6px, #555555 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #555555 6px, #555555 12px);
+}
+
+.primary_button--black .primary_button__stripe2:after {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #d7063b 6px, #d7063b 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #d7063b 6px, #d7063b 12px);
+}
+
+.primary_button--red {
+  color: #ffffff;
+}
+
+.primary_button--red:hover {
+  color: #d7063b;
+}
+
+.primary_button--red .primary_button__stripe1:before {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #830324 6px, #830324 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #830324 6px, #830324 12px);
+}
+
+.primary_button--red .primary_button__stripe1:after {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #dddddd 6px, #dddddd 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #dddddd 6px, #dddddd 12px);
+}
+
+.primary_button--red .primary_button__stripe2:before {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #d7063b 6px, #d7063b 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #d7063b 6px, #d7063b 12px);
+}
+
+.primary_button--red .primary_button__stripe2:after {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #ffffff 6px, #ffffff 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #ffffff 6px, #ffffff 12px);
+}
+
+.primary_button--blue {
+  color: #ffffff;
+}
+
+.primary_button--blue:hover {
+  color: #000000;
+}
+
+.primary_button--blue .primary_button__stripe1:before {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #001630 6px, #001630 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #001630 6px, #001630 12px);
+}
+
+.primary_button--blue .primary_button__stripe1:after {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #dddddd 6px, #dddddd 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #dddddd 6px, #dddddd 12px);
+}
+
+.primary_button--blue .primary_button__stripe2:before {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #002b60 6px, #002b60 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #002b60 6px, #002b60 12px);
+}
+
+.primary_button--blue .primary_button__stripe2:after {
+  background: -webkit-repeating-linear-gradient(135deg, transparent, transparent 5px, #ffffff 6px, #ffffff 12px);
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, #ffffff 6px, #ffffff 12px);
+}
+
+.primary_button__link {
+  line-height: 66px;
+  padding-left: 64px;
+  padding-right: 64px;
+  position: relative;
+  z-index: 10;
+}
+
+.link--default {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.link--text {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.link--text:hover {
+  text-decoration: underline;
+}
+
+.link--text:active {
+  text-decoration: underline;
+}
+
+
 
 /* SEC02 Gallery
 ------------------------------------------------------------*/
@@ -298,6 +500,23 @@ section h2 span {
 	#map iframe{
 		width: 100% !important;
 		left: 2%;
+	}
+	.primary_button__wrapper {
+		padding-top: 35px;
+		padding-bottom: 35px;
+		width: 92%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.primary_button {
+		width: 96%;
+		font-size: 1.6rem;
+	}
+
+	.primary_button__link {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
